@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+
+.share {
+    border: 1px solid black;
+    text-align: center;
+    order: 3;
+    margin-top: 20px;
+    height: 120px;
+}
+
+.share .social-button {
+    place-items: center;
+    text-align: center;
+    display: inline-flex;
+    list-style: none;
+}
+
+.share .social-button li {
+    top: 40px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #7b00e0;
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.share .social-button li:hover {
+    transition: background 0.001s ease 0.3s;
+    background-color: #7b00e0;
+}
+
+.share .social-button li:before,
+.share .social-button li:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.share .social-button li:hover:before {
+    border-width: 70px;
+    border-top-color: #7b00e0;
+    transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+}
+.share .social-button li:hover:after {
+    border-width: 70px;
+    border-left-color: #7b00e0;
+    transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+}
+
+.share .social-button li a {
+    line-height: 38px;
+    font-size: 25px;
+    color: #7b00e0;
+    z-index: 1;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.share .social-button li:hover a {
+    color: #fff;
+}
+
+/* untuk warna yang berbeda bisa diganti dengan tag nth:child */
+
